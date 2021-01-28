@@ -1,8 +1,8 @@
 #!/bin/bash
 rm -rf osx/*
-cp -v -r ../vmpc-juce/Builds/MacOSX/build/Release/vmpc.app osx/
-cp -v -r ~/Library/Audio/Plug-Ins/Components/vmpc.component osx/
-cp -v -r ~/Library/Audio/Plug-Ins/VST3/vmpc.vst3 osx/
-zip -v -r osx/vmpc.zip osx/vmpc.app
-zip -v -r osx/vmpc.component.zip osx/vmpc.component
-zip -v -r osx/vmpc.vst3.zip osx/vmpc.vst3
+cp -v -r ../vmpc-workspace/vmpc-juce/build/vmpc2000xl_artefacts/Release/Standalone/vmpc2000xl.app osx/
+cp -v -r ../vmpc-workspace/vmpc-juce/build/vmpc2000xl_artefacts/Release/VST3/vmpc2000xl.vst3 osx/
+cp -v -r ../vmpc-workspace/vmpc-juce/build/vmpc2000xl_artefacts/Release/AU/vmpc2000xl.component osx/
+zip -v -r osx/vmpc2000xl.zip osx/vmpc2000xl.app
+zip -v -r osx/vmpc2000xl.component.zip osx/vmpc2000xl.component
+zip -v -r osx/vmpc2000xl.vst3.zip osx/vmpc2000xl.vst3
