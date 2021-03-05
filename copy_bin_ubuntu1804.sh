@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -v ../vmpc-workspace/vmpc-juce/build/vmpc2000xl_artefacts/Release/Standalone/vmpc2000xl ./linux/ubuntu1804/
+cp -v ../vmpc-workspace/vmpc-juce/build/vmpc2000xl_artefacts/Release/Standalone/VMPC2000XL ./linux/ubuntu1804/
