@@ -1,0 +1,31 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
+
+<http://www.izmar.nl/VMPC2000XL>
+    a lv2:Plugin ;
+    lv2:binary <VMPC2000XL.so> ;
+    rdfs:seeAlso <VMPC2000XL.ttl> .
+
+<http://www.izmar.nl/VMPC2000XL#ExternalUI>
+    a <http://kxstudio.sf.net/ns/lv2ext/external-ui#Widget> ;
+    ui:binary <VMPC2000XL.so> ;
+    lv2:requiredFeature <http://lv2plug.in/ns/ext/instance-access> ;
+    lv2:optionalFeature ui:touch ;
+    lv2:extensionData <http://kxstudio.sf.net/ns/lv2ext/programs#UIInterface> .
+
+<http://www.izmar.nl/VMPC2000XL#ParentUI>
+    a ui:X11UI ;
+    ui:binary <VMPC2000XL.so> ;
+    lv2:requiredFeature <http://lv2plug.in/ns/ext/instance-access> ;
+    lv2:optionalFeature ui:idleInterface, ui:noUserResize, ui:touch ;
+    lv2:extensionData ui:idleInterface, <http://kxstudio.sf.net/ns/lv2ext/programs#UIInterface> .
+
+<http://www.izmar.nl/VMPC2000XL#preset001>
+    a pset:Preset ;
+    lv2:appliesTo <http://www.izmar.nl/VMPC2000XL> ;
+    rdfs:label "" ;
+    rdfs:seeAlso <presets.ttl> .
+
+
